@@ -1,0 +1,98 @@
+.outerbox {
+  max-width: 500px; /* Adjusted maximum width */
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 30px;
+}
+
+.input-box h1 {
+  margin: 0;
+  margin-left: 20px; /* Adjusted margin */
+  margin-top: 20px;
+  color: #333; /* Text color */
+}
+
+.input-box {
+  padding: 20px; /* Increased padding */
+  border: 2px solid #007bff; /* Border color */
+  border-radius: 15px;
+  max-width: 500px;
+  background-color: #f8f9fa; /* Background color */
+}
+
+.inputs {
+  margin-bottom: 15px; /* Adjusted margin */
+}
+
+.inputbox {
+  width: calc(100% - 22px); /* Adjusted width */
+  height: 40px; /* Increased height */
+  border-radius: 10px;
+  padding: 8px;
+  border: 1px solid #ced4da; /* Border color */
+}
+
+.desbox {
+  width: calc(100% - 22px); /* Adjusted width */
+  min-height: 150px; /* Increased minimum height */
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ced4da; /* Border color */
+  background-color: #fff; /* Background color */
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  width: 100px; /* Adjusted width */
+  height: 40px; /* Adjusted height */
+  background-color: #007bff; /* Background color */
+  border: none;
+  border-radius: 10px;
+  color: #fff; /* Text color */
+  font-size: 16px; /* Font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.submit:hover {
+  background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* RichTextEditor styling */
+.rich-text-editor {
+  margin-top: 15px;
+}
+
+.rich-text-editor .ql-toolbar {
+  background-color: #007bff; /* Toolbar background color */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.rich-text-editor .ql-toolbar button {
+  color: #fff; /* Button text color */
+}
+
+.rich-text-editor .ql-container {
+  border: 1px solid #ced4da; /* Border color */
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Placeholder styling */
+.rich-text-editor .ql-container .ql-editor::before {
+  content: attr(data-placeholder); /* Display placeholder text */
+  color: #6c757d; /* Placeholder text color */
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  pointer-events: none; /* Make placeholder non-clickable */
+}
+
+.rich-text-editor .ql-container .ql-editor:focus::before {
+  display: none; /* Hide placeholder text when editor is focused */
+}
