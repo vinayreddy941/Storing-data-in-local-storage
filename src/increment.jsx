@@ -1,8 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./index.css";
 
+
+
+
+
+
+
+
 function Increment() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(() => {
+    // Retrieve count value from local storage or default to 0
+    const storedCount = localStorage.getItem("count");
+    return storedCount ? parseInt(storedCount, 10) : 0;
+  });
+
+  useEffect(() => {
+    // Update local storage whenever count changes
+    localStorage.setItem("count", count);
+  }, [count]);
 
   const handleIncrement = () => {
     setCount(count + 1);
@@ -17,9 +33,13 @@ function Increment() {
   };
 
   return (
+
+    
     <div className="total">
+
       <div className="forflexing">
         <div className="changingcolor">
+        
           <div
             className="blue"
             style={{
@@ -65,5 +85,6 @@ function Increment() {
     </div>
   );
 }
+
 
 export default Increment;

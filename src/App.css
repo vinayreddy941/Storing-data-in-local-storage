@@ -1,43 +1,43 @@
 .outerbox {
-  max-width: 500px; /* Adjusted maximum width */
-  margin: 0 auto; /* Center horizontally */
+  max-width: 500px;
+  margin: 0 auto;
   margin-top: 30px;
 }
 
 .input-box h1 {
   margin: 0;
-  margin-left: 20px; /* Adjusted margin */
+  margin-left: 20px;
   margin-top: 20px;
-  color: #333; /* Text color */
+  color: #333;
 }
 
 .input-box {
-  padding: 20px; /* Increased padding */
-  border: 2px solid #007bff; /* Border color */
+  padding: 20px;
+  border: 2px solid #007bff;
   border-radius: 15px;
   max-width: 500px;
-  background-color: #f8f9fa; /* Background color */
+  background-color: #f8f9fa;
 }
 
 .inputs {
-  margin-bottom: 15px; /* Adjusted margin */
+  margin-bottom: 15px;
 }
 
 .inputbox {
-  width: calc(100% - 22px); /* Adjusted width */
-  height: 40px; /* Increased height */
+  width: calc(100% - 22px);
+  height: 40px;
   border-radius: 10px;
   padding: 8px;
-  border: 1px solid #ced4da; /* Border color */
+  border: 1px solid #ced4da;
 }
 
 .desbox {
-  width: calc(100% - 22px); /* Adjusted width */
-  min-height: 150px; /* Increased minimum height */
+  width: calc(100% - 22px);
+  min-height: 150px;
   padding: 8px;
   border-radius: 10px;
-  border: 1px solid #ced4da; /* Border color */
-  background-color: #fff; /* Background color */
+  border: 1px solid #ced4da;
+  background-color: #fff;
 }
 
 .submit-button {
@@ -46,53 +46,51 @@
 }
 
 .submit {
-  width: 100px; /* Adjusted width */
-  height: 40px; /* Adjusted height */
-  background-color: #007bff; /* Background color */
+  width: 100px;
+  height: 40px;
+  background-color: #007bff;
   border: none;
   border-radius: 10px;
-  color: #fff; /* Text color */
-  font-size: 16px; /* Font size */
+  color: #fff;
+  font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease;
 }
 
 .submit:hover {
-  background-color: #0056b3; /* Darker background color on hover */
+  background-color: #0056b3;
 }
 
-/* RichTextEditor styling */
 .rich-text-editor {
   margin-top: 15px;
 }
 
 .rich-text-editor .ql-toolbar {
-  background-color: #007bff; /* Toolbar background color */
+  background-color: #007bff;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
 .rich-text-editor .ql-toolbar button {
-  color: #fff; /* Button text color */
+  color: #fff;
 }
 
 .rich-text-editor .ql-container {
-  border: 1px solid #ced4da; /* Border color */
+  border: 1px solid #ced4da;
   border-top: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 
-/* Placeholder styling */
 .rich-text-editor .ql-container .ql-editor::before {
-  content: attr(data-placeholder); /* Display placeholder text */
-  color: #6c757d; /* Placeholder text color */
+  content: attr(data-placeholder);
+  color: #6c757d;
   position: absolute;
   top: 10px;
   left: 20px;
-  pointer-events: none; /* Make placeholder non-clickable */
+  pointer-events: none;
 }
 
 .rich-text-editor .ql-container .ql-editor:focus::before {
-  display: none; /* Hide placeholder text when editor is focused */
+  display: none;
 }

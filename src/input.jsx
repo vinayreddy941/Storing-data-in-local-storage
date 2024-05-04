@@ -7,7 +7,7 @@ import { v4 as uuidv4 } from 'uuid'; // Import uuid to generate unique IDs
 import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import FormSubmitted from './FormSubmitted.jsx'; // Import the FormSubmitted component
 
-
+import {Discl} from "./discl.jsx"
 
 function Input() {
   const [formData, setFormData] = useState({
@@ -71,8 +71,11 @@ function Input() {
   return (
     <>
     <div>
+        <Discl />
         <Increment />
        
+       
+
 
 
        

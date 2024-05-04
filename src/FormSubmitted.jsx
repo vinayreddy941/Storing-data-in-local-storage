@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './FormSubmitted.css'; 
-
+import { Discl2 } from './discl';
 function FormSubmitted() {
   const [userId, setUserId] = useState('');
   const [formData, setFormData] = useState(null);
@@ -24,7 +24,10 @@ function FormSubmitted() {
   };
 
   return (
+    <div>
+      <Discl2 />
     <div className="container">
+      
       <div className="left-panel">
         <h3 className="user-ids-heading">All User IDs:</h3>
         <ul className="user-ids-list">
@@ -58,7 +61,7 @@ function FormSubmitted() {
           </div>
         )}
       </div>
-      
+      </div>
     </div>
   );
 }
